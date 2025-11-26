@@ -36,10 +36,32 @@ public class App
 //    			.build();
 //    	System.out.println(pizza);
     	
-    	DrinkMaker tea=new TeaMaker();
-    	tea.prepareDrink();
+    	//Template method pattern-behavioral
+//    	DrinkMaker tea=new TeaMaker();
+//    	tea.prepareDrink();
+//    	
+//    	DrinkMaker coffee=new CoffeeMaker();
+//    	coffee.prepareDrink();
     	
-    	DrinkMaker coffee=new CoffeeMaker();
-    	coffee.prepareDrink();
+    	//structural pattern
+    	//Bridge pattern
+//    	
+//    	Video youtubeHd=new YouTube(new HDProcessing());
+//    	youtubeHd.playVideo();
+//    	
+//    	Video youtube4k=new YouTube(new FourKProcessing());
+//    	youtube4k.playVideo();
+    	
+    	//Proxy pattern
+    	
+    	Payment netBanking=new NetBanking();
+    	netBanking.pay(5000);
+    	System.out.println("**********************");
+    	Payment upi=new UpiPayment();
+    	upi.pay(70000);
+    	
+    	
+    	
+    	
     }
 }
